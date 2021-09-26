@@ -81,14 +81,8 @@ TEMPLATES = [
 # ==============================================================================
 
 DATABASES = {
+    
     "default": dj_database_url.config(
-        default=config(
-            "DATABASE_URL",
-            default="mysql://root:root1113@127.0.0.1:3306/riderkeys?init_command=SET sql_mode='STRICT_TRANS_TABLES'",
-        ),
-        conn_max_age=600,
-    ),
-    "legacy_db": dj_database_url.config(
         default=config(
             "DATABASE_URL",
             default="mysql://admin:yv2plm9mze3551dv@db-mysql-lon1-79982-do-user-3498265-0.b.db.ondigitalocean.com:25060/riderkeys",
